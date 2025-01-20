@@ -171,7 +171,7 @@ main {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   main {
     flex-direction: column;
     width: 90%;
@@ -214,7 +214,7 @@ main {
   }
 
   .dice {
-    margin: 16rem auto;
+    margin:16rem auto;
     height: 6rem;
   } 
 
@@ -231,7 +231,14 @@ main {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    /* padding: 4rem; */
+  }
+
   .btn {
     font-size: 1.3rem;
     padding: 0.5rem 1.8rem;
@@ -244,17 +251,17 @@ main {
 
   .btn--hold {
     top: 36rem;
-    margin: auto -12rem;
+    margin: auto -13rem;
   }
 
   .btn--new {
-    margin: auto 13rem;
-    top: 3rem;
+    margin: auto 15rem;
+    top: 8rem;
   }
 
   .dice {
     height: 6rem;
-    top: 15rem;
+    top: 16rem;
   }
 
   .name {
@@ -272,4 +279,8 @@ main {
   .current {
     padding: 1.5rem;
   }
+}
+
+@media (min-width: 801px) {
+
 }
