@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
@@ -168,4 +168,107 @@ main {
 
 .hidden {
   display: none;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .player {
+    padding: 5rem;
+    flex: unset;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.6rem 2rem;
+  }
+
+  .btn--roll {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: auto 20rem;
+    top: 38rem;
+  }
+
+  .btn--hold {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: auto -20rem;
+    top: 40rem;
+  }
+
+  .btn--new {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: auto 20rem;
+    top: 6rem;
+  }
+
+  .dice {
+    margin: 16rem auto;
+    height: 6rem;
+  } 
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .score {
+    font-size: 6rem;
+  }
+
+  .current-score {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 1.3rem;
+    padding: 0.5rem 1.8rem;
+  }
+
+  .btn--roll {
+    top: 34rem;
+    margin: auto 16rem;
+  }
+
+  .btn--hold {
+    top: 36rem;
+    margin: auto -16rem;
+  }
+
+  .btn--new {
+    margin: auto 16rem;
+  }
+
+  .dice {
+    height: 6rem;
+    top: 15rem;
+  }
+
+  .name {
+    font-size: 2.8rem;
+  }
+
+  .score {
+    font-size: 5rem;
+  }
+
+  .current-score {
+    font-size: 2.5rem;
+  }
+
+  .current {
+    padding: 1.5rem;
+  }
 }
