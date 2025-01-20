@@ -239,16 +239,17 @@ main {
 
   .btn--roll {
     top: 34rem;
-    margin: auto 16rem;
+    margin: auto 12rem;
   }
 
   .btn--hold {
     top: 36rem;
-    margin: auto -16rem;
+    margin: auto -12rem;
   }
 
   .btn--new {
-    margin: auto 16rem;
+    margin: auto 13rem;
+    top: 3rem;
   }
 
   .dice {
